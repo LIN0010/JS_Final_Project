@@ -1,0 +1,33 @@
+{
+    "main": [
+		{ "type": "command", "command": "showNarrator" },
+		{ "type": "dialogue", "speaker": "哥布林", "text": "在這片被勇者們肆虐的森林裡，哥布林族群忍氣吞聲了百年。" },
+		{ "type": "command", "command": "showImage" ,"src": "https://raw.githubusercontent.com/LIN0010/JS_Final_Project/main/images/goblin1.png"},
+		{ "type": "dialogue", "speaker": "哥布林", "text": "我們曾經是這片大地的主宰，卻被冠上「怪物」的名號，遭受驅逐、獵殺。" },
+		{ "type": "dialogue", "speaker": "哥布林", "text": "今天，勇者們還妄想奪走最後的棲息地？" },
+		{ "type": "dialogue", "speaker": "哥布林", "text": "不！" },
+		{ "type": "dialogue", "speaker": "哥布林", "text": "哥布林的憤怒不再沉默。" },
+		{ "type": "command", "command": "hideImage" },
+		{ "type": "dialogue", "speaker": "哥布林", "text": "我們將用每一次擊退、每一滴血，證明——這裡是哥布林的家。" },
+		{ "type": "dialogue", "speaker": "哥布林", "text": "你們可以奪走我們的土地，但奪不走我們的尊嚴！" },
+		{ "type": "command", "command": "shakeNarrator" },
+		{ "type": "dialogue", "speaker": "哥布林", "text": "讓每個闖入者，付出代價。","color": "red" },
+		{ "type": "command", "command": "hideNarrator" },
+		{ "type": "action", "text": "遊戲說明：" },
+		{ "type": "command", "command": "showImage" ,"src": "https://raw.githubusercontent.com/LIN0010/JS_Final_Project/main/ill1.png"},
+		{ "type": "action", "text": "遊戲中，勇士會從四面八方向你靠近。" },
+		{ "type": "action", "text": "正確打下單字即可消滅他們。" },
+		{ "type": "action", "text": "選擇升級挑戰則是會把英文單字長度用*取代。" },
+		{ "type": "action", "text": "遊戲勝利的條件是打對所有單字庫的單字" },
+		{ "type": "command", "command": "showImage" ,"src": "https://raw.githubusercontent.com/LIN0010/JS_Final_Project/main/ill2.png"},
+		{ "type": "action", "text": "答錯也沒關係，你可以在遊戲結束後查看單字表複習。" },
+		{ "type": "command", "command": "showImage" ,"src": "https://raw.githubusercontent.com/LIN0010/JS_Final_Project/main/ill3.png"},
+		{ "type": "action", "text": "開頭處也有遊戲調整區(選單)" },
+		{ "type": "action", "text": "可以調整勇者生成和移動速度。" },
+		{ "type": "command", "command": "showImage" ,"src": "https://raw.githubusercontent.com/LIN0010/JS_Final_Project/main/images/ill4.png"},
+		{ "type": "action", "text": "也能調整你喜歡的單字庫(有JSON格式限定)。" },
+		{ "type": "command", "command": "hideImage" },
+		{ "type": "action", "text": "那麼，請盡情享受遊戲吧。" },
+		{ "type": "action", "text": "(期待回應......)" }
+    ]
+}

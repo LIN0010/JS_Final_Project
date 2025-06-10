@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>痛苦打字機 - 勇者來襲</title>
+	<link rel="stylesheet" href="L1.css" />
+</head>
+<body>
+	<div id="startOverlay" style="display: flex;">
+		<div class="start-box">
+			<h3>哥布林的試煉</h3>
+			<p>準備好面對勇者的試煉了嗎？</p>
+			<p>選擇你的挑戰模式：</p>
+			<button onclick="startGame('normal')">普通模式</button>
+			<button onclick="startGame('masked')">升級挑戰</button>
+			<button onclick="openSettings()">選單</button>
+		</div>
+	</div>
+
+	<div id="settingsOverlay" style="display: none;">
+		<div class="start-box"> <!-- ✅ 直接沿用 start-box 樣式 -->
+			<h3>挑戰設定</h3>
+
+			<label class="settings-item">勇者生成速度:
+				<select id="speedSelect">
+					<option value="7500">極慢</option>
+					<option value="5000">普通</option>
+					<option value="2500">快速</option>
+					<option value="1000">瘋狂</option>
+				</select>
+			</label>
+
+			<label class="settings-item">勇者移動速度:
+				<select id="enemySpeedSelect">
+					<option value="4">極慢</option>
+					<option value="3">普通</option>
+					<option value="2">快速</option>
+					<option value="1">瘋狂</option>
+				</select>
+			</label>
+
+			<label class="settings-item">
+				<input type="checkbox" id="enableSupplyNeedle">
+				補給針模式
+			</label>
+
+
+			<label class="settings-item">上傳自訂單字表:
+				<input type="file" id="customWordsFile" accept=".json">
+			</label>
+
+			<button onclick="saveSettings()">儲存</button>
+			<button onclick="closeSettings()">關閉</button>
+		</div>
+	</div>
+
+	<div class="game-container">
+		<div class="health-container">
+			<div class="health-bar" id="health-bar">❤️❤️❤️❤️❤️</div>
+			<span id="remainingWords">剩餘單字：0</span>
+		</div>
+
+		<div class="arena" id="arena">
+			<div class="goblin-core"></div>
+		</div>
+
+		<div class="input-container">
+			<input type="text" id="typing-input" placeholder="打字消滅勇者…" autofocus />
+		</div>
+	</div>
+  
+	<div id="endOverlay" style="display: none;">
+		<div class="end-box">
+			<h3 id="endTitle"></h3>
+			<p id="endCount"></p>
+			<button onclick="viewWords()">查看單字</button>
+			<button onclick="restartGame()">再來一次</button>
+			<button onclick="goBack()">重新設定</button>
+			<button onclick="goHome()">離開遊戲</button>
+		</div>
+	</div>
+
+	<div id="reviewOverlay" style="display: none;">
+		<div class="review-box">
+			<h3>單字複習</h3>
+			<div class="review-columns">
+				<div class="review-column">
+					<h4>已打對：</h4>
+					<ul id="correctWordsList"></ul>
+				</div>
+				<div class="review-column">
+					<h4>沒打對：</h4>
+					<ul id="wrongWordsList"></ul>
+				</div>
+				<div class="review-column">
+					<h4>錯誤次數：</h4>
+					<ul id="errorCountList"></ul>
+				</div>
+			</div>
+			<button onclick="closeReview()">關閉</button>
+		</div>
+	</div>
+
+	<script src="L1.js"></script>
+</body>
+</html>
+

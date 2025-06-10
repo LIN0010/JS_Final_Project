@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>哥布林行前說明</title>
+    <link rel="stylesheet" href="ill.css" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+</head>
+<body data-story="ill.json">
+    <div class="full-background"></div>
+
+	<div id="specialEffectOverlay">
+		<img src="" alt="特效圖片"/>
+	</div>
+	
+	<div id="narrator">
+		<img src="https://raw.githubusercontent.com/LIN0010/JS_Final_Project/main/images/goblin5.png"/>
+	</div>
+
+	<!-- 角色名稱區塊+對話框（放在背景層外） -->
+	<section class="dialogue-box" onclick="showNextLine()">
+		<div class="name-tag" id="nameTag">測試</div>
+		<div class="dialogue-text" id="dialogueText">（這裡會顯示劇情對話）</div>
+	</section>
+
+	<!-- 按鈕面板 -->
+	<nav class="button-panel">
+		<button class="game-button" id="autoButton" onclick="autoPlay()">
+			<img id="autoIcon" src="https://raw.githubusercontent.com/LIN0010/JS_Final_Project/main/images/stop.png" width="24" height="24" alt="Auto" />
+		</button>
+		<button class="game-button" onclick="toggleHistory()">
+			<img src="https://raw.githubusercontent.com/LIN0010/JS_Final_Project/main/images/history.png" width="24" height="24" alt="歷史" />
+		</button>
+			<button class="game-button" onclick="skip()">
+		<img src="https://raw.githubusercontent.com/LIN0010/JS_Final_Project/main/images/skip.png" width="24" height="24" alt="跳過" />
+		</button>
+		<button class="game-button" onclick="toggleMenu()">
+			<img src="https://raw.githubusercontent.com/LIN0010/JS_Final_Project/main/images/menu.png" width="24" height="24" alt="清單" />
+		</button>
+	</nav>
+
+
+	<div>
+		<div class="menu-overlay" id="menuOverlay">
+			<aside class="menu-content">
+				<h3>選單</h3>
+				<ul>
+					<!--li onclick="continueGame()">繼續遊戲</li-->
+					<!--li>儲存進度（尚未實作）</li-->
+					<li onclick="goHome()">回主頁</li>
+				</ul>
+				<button onclick="toggleMenu()">關閉</button>
+			</aside>
+		</div>
+		<div class="history-overlay" id="historyOverlay">
+			<aside class="history-content">
+				<h3>歷史紀錄</h3>
+				<ul id="historyList">
+				<!-- 每一句對話會自動加在這 -->
+				</ul>
+				<button class="dialog-button" onclick="toggleHistory()">關閉</button>
+			</aside>
+		</div>
+	</div>
+	
+	<div id="endOverlay" style="display: none;">
+		<div class="end-box">
+			<button onclick="enterGame()">進入遊戲</button>
+			<button onclick="goHome()">退縮</button>
+		</div>
+	</div>
+	<script src="ill.js"></script>
+</body>
+</html>

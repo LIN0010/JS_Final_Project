@@ -1,0 +1,14 @@
+{
+    "words": [
+		{ "en": "blastomere", "zh": "胚珠" },
+		{ "en": "cleavage", "zh": "卵裂" },
+		{ "en": "blastula", "zh": "囊胚" },
+		{ "en": "gastrula", "zh": "原腸胚" },
+		{ "en": "apoptosis", "zh": "細胞凋亡" },
+		{ "en": "ectoderm", "zh": "外胚層" },
+		{ "en": "endoderm", "zh": "內胚層" },
+		{ "en": "mesoderm", "zh": "中胚層" },
+		{ "en": "archenteron", "zh": "原腸" }
+    ]
+}
+

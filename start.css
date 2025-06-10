@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: "標楷體", "DFKai-SB", cursive; /* 或你想要的手寫體 */
+    background: url('https://raw.githubusercontent.com/LIN0010/JS_Final_Project/main/images/background1_1.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff; /* 白字比較明顯 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* 透明背景，讓文字可讀 */
+    padding: 5rem;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.3rem;
+}
+
+.buttons button {
+    display: block;
+    width: 200px;
+    margin: 1rem auto;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+
+
