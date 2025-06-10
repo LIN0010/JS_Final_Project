@@ -479,7 +479,7 @@ function saveSettings() {
 
 function goHome() {
     // 退縮（回主頁）
-    window.location.href = "https://www.google.com/";
+    window.location.href = "https://lin0010.github.io/JS_Final_Project/";
 }
 
 function debounce(fn, delay) {
