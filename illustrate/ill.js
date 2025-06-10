@@ -244,12 +244,12 @@ window.shakeNarrator = shakeNarrator;
 
 function enterGame() {
 // 進入遊戲頁面（換
-    window.location.href = "https://www.example.com/game";
+    window.location.href = "https://lin0010.github.io/JS_Final_Project/L1/index.html";
 }
 
 function goHome() {
     // 退縮（回主頁）
-    window.location.href = "https://www.google.com/";
+    window.location.href = "https://lin0010.github.io/JS_Final_Project/";
 }
 
 
