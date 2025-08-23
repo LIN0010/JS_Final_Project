@@ -170,7 +170,7 @@ function gameOver() {
 }
 
 // 讀取外部 JSON 單字檔
-fetch('t2.json')
+fetch('t1.json')
     .then(response => {
         if (!response.ok) throw new Error('Failed to load word list');
         return response.json();
@@ -489,3 +489,4 @@ function debounce(fn, delay) {
         timeoutId = setTimeout(() => fn.apply(this, args), delay);
     };
 }
+
